@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJ's Wolverine Workout | Build Your Best Self</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AJ's Wolverine Workout home">
+        <span class="brand-mark">W</span>
+        <span>AJ'S <span class="brand-accent">WOLVERINE WORKOUT</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#today">Today's Mission</a>
+        <a href="#progress">Progress</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">☾</button>
+        <button class="menu-button" aria-label="Toggle navigation">☰</button>
+        <button class="profile-button" aria-label="Open profile">AJ</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> THE DAILY GRIND</p>
+          <h1>TRAIN<br /><em>FEROCIOUSLY.</em></h1>
+          <p class="hero-text">Strength isn't given. It's earned one rep, one set, and one day at a time. Your next evolution starts here.</p>
+          <a class="primary-button" href="#today">START TODAY'S WORKOUT <span>→</span></a>
+        </div>
+        <div class="hero-graphic" aria-hidden="true">
+          <div class="sun-ring"></div>
+          <div class="claw claw-one"></div>
+          <div class="claw claw-two"></div>
+          <div class="claw claw-three"></div>
+          <div class="graphic-label">NO<br /><strong>EXCUSES</strong></div>
+        </div>
+      </section>
+
+      <section class="stats-bar" id="progress">
+        <div><strong>12</strong><span>DAY STREAK</span></div>
+        <div><strong>4,280</strong><span>CALORIES BURNED</span></div>
+        <div><strong>18</strong><span>WORKOUTS COMPLETE</span></div>
+        <div class="quote-stat"><span>“The pain you feel today<br />will be the strength you feel tomorrow.”</span></div>
+      </section>
+
+      <section class="content-section" id="today">
+        <div class="daily-nav" aria-label="Jump to a daily workout">
+          <span class="daily-nav-label">DAILY MISSIONS</span>
+          <button class="daily-button" data-day-jump="1">DAY 1</button>
+          <button class="daily-button" data-day-jump="2">DAY 2</button>
+          <button class="daily-button" data-day-jump="3">DAY 3</button>
+          <button class="daily-button" data-day-jump="4">DAY 4</button>
+          <button class="daily-button" data-day-jump="5">DAY 5</button>
+        </div>
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> <span id="dayLabel">DAY 1</span></p><h2>YOUR DAILY<br /><em>MISSION</em></h2><p class="safety-note">SCIATICA MODIFICATIONS: USE LIGHT, CONTROLLED LOADS. STOP IF PAIN, NUMBNESS, OR TINGLING INCREASES, AND CHECK WITH A QUALIFIED CLINICIAN.</p></div>
+          <div class="completion"><span id="completionText">0% COMPLETE</span><div class="progress-track"><div id="progressFill"></div></div></div>
+        </div>
+        <div class="day-tabs" role="tablist" aria-label="Workout days">
+          <button class="day-tab active" data-day="1">DAY 1</button>
+          <button class="day-tab" data-day="2">DAY 2</button>
+          <button class="day-tab" data-day="3">DAY 3</button>
+          <button class="day-tab" data-day="4">DAY 4</button>
+          <button class="day-tab" data-day="5">DAY 5</button>
+        </div>
+        <div class="workout-grid">
+          <article class="workout-card featured">
+            <div class="card-top"><span class="tag" id="focusLabel">DAY 1 FOCUS</span><span class="duration">WOLVERINE PLAN</span></div>
+            <h3 id="featuredTitle">BARBELL<br /><em>BENCH</em></h3>
+            <p id="featuredDescription">Build pressing strength with controlled, powerful barbell bench sets.</p>
+            <button class="card-button" id="beginButton">BEGIN WORKOUT <span>→</span></button>
+          </article>
+          <div class="exercise-list" id="exerciseList"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer><span class="brand-mark">W</span><span>AJ'S WOLVERINE WORKOUT</span><span class="footer-note">DISCIPLINE OVER MOTIVATION.</span></footer>
+    <button class="top-button" id="topButton" type="button" aria-label="Move to the top of the page">↑ <span>TOP</span></button>
+    <script src="script.js"></script>
+  </body>
+</html>
